@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="icon" href="assets/img/favicon-32x32.png" type="image/png" style="border-radius: 50%" />	
+    <title>AwareSHE</title>
+</head>
+
+<body>
+    <nav class="navbar shadow justify-content-start">
+        <a href="home.html" class="navbar-brand navbar-expand-md text-danger font-weight-bolder font-italic">AwareSHE</a>
+    </nav>
+    <div class="jumbotron text-center mb-0">
+        <h1 class="text-danger font-weight-bolder font-italic">AwareSHE</h1>
+        <p class="text-dark font-weight-bolder">Everything you need to know about Contraception</p>
+    </div>
+
+    <div class="container-lg p-4 text-center" id="page-link-div">
+        <h3 class="text-center font-weight-bolder">Click to go back &#8681;</h3>
+        <button type="button" class="btn-lg btn-primary mt-2 text-white mx-auto" onclick="homePage()">Home Page</button>
+        <!-- <div class="card-group mb-4 text-center">
+            <div class="card border border-dark shadow bg-primary mt-3 rounded-lg mx-5">
+                <div class="card-body border border-primary">
+                    <h4 class="font-italic font-weight-bolder mt-md-2 mt-lg-1">
+                        <u>
+                            <a href="home.html" class="card-link text-white stretched-link">Home Page</a></h4>
+                        </u>
+                </div>
+            </div> -->
+        <!-- <div class="card shadow bg-warning mt-3 mx-5 rounded-lg">
+                <div class="card-body">
+                    <h4 class="text-white font-italic mt-md-2 mt-lg-2">
+                        <u>
+                            <a href="conception.html" class="card-link text-white stretched-link">How to be Pregnant</a>
+                        </u>
+                    </h4>
+                </div>
+            </div> -->
+    </div>
+    </div>
+    <div class="container border mb-3 mt-4 pt-3 rounded-lg">
+        <h4 class="display-4 text-danger p-3">Contraception</h4>
+        <p>Contraception is the method or practice which allows intercourse and yet prevents pregnancy.
+            <i>Unfortunately, No contraceptive method is perfect and its failure may result in pregnancy. </i> Choose contraceptive method based on your preferences for e.g. pleasure, cost, duration, benefits and side effects.
+
+        </p>
+        <h4 class="font-weight-bold mt-4">Methods of Contraception</h4>
+        <div class="row mt-2">
+            <div class="col-md border rounded-lg p-3">
+                <h5 class="text-danger">Natural Methods:</h5>
+                <p class="">1) <a href="#abstinence">Abstinence during the fertile phase.</a>
+                </p>
+                <p class="">2) <a href="#withdrawal">Withdrawal Method (coitus interrupts)</a>
+                </p>
+                <p class="">3) <a href="#breastfeeding">Breastfeeding</a>
+                </p>
+            </div>
+            <div class="col-md border rounded-lg p-3">
+                <h5 class="text-success">Barrier contraceptives:</h5>
+                <p class="">1) <a href="#maleCondoms">Use of condoms by male</a>
+                </p>
+                <p class="">2) <a href="#spermicidalAgent">Use of spermicidal agents</a>
+                </p>
+                <p class="">3) <a href="#diaphragmUse">Use of diaphragm, or the cervical cap</a>
+                </p>
+                <p class="">4) <a href="#femaleCondom">Use of female condom</a>
+                </p>
+                <p class="">4) <a href="#progesteronePills">Using progesterone pills</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md border rounded-lg p-3">
+                <h5 class="text-warning">Intrauterine contraceptive devices(IUCD)
+                    <a href="#iud" class="font-weight-light small">click here</a>
+                </h5>
+            </div>
+            <div class="col-md border rounded-lg p-3">
+                <h5 class="text-danger">Suppression of ovulation with hormones
+                    <a href="#hormonalPills" class="font-weight-light small">click here</a>
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md p-3 border rounded-lg">
+                <h5 class="text-success">Emergency Contraceptives
+                    <a href="#emergencyPill" class="font-weight-light small">click here</a>
+                </h5>
+            </div>
+            <div class="col-md p-3 border rounded-lg">
+                <h5 class="text-secondary">Surgical sterilization
+                    <a href="#" class="font-weight-light small">click here</a>
+                </h5>
+            </div>
+        </div>
+        <h4 class="font-weight-bolder mt-3 mb-3 text-center" id="natural-method-divider">
+            <u>Natural Methods</u>
+        </h4>
+        <div class="row">
+            <div class="col-md border-danger border rounded-lg p-3" id="abstinence">
+                <h4 class="text-center text-danger font-weight-bolder">Abstinence during the fertile phase</h4>
+                <p class="mt-3">
+                    This is known as Calendar method or the Rhythm method.
+                    <i>This depends upon the avoidance of sexual intercourse around ovulation. In a 28-day cycle, ovulation normally occurs on the 14th days
+                        of the cycle. but may occur anytime between the 12th and 16th day. The spermatozoa deposited in the female genital tract may survive upto 5 days.
+                         The ovum itself may live for 12-24h so that intercourse between the 10th and 17th day may result in a pregnancy.
+                    </i>
+                    <a class="" data-toggle="collapse" data-target="#abstinencePara" id="abstinence-read-more">Read more</a>
+                </p>
+                <p class="collapse" id="abstinencePara">
+                    <i> The safe period is therefore, calculated from the first day of the menstrual period until the 9th day of the cycle and from 18th day to 28th day. 
+                    </i> An alternate method is avoid intercourse from 3 days before ovulation to 3 days after ovulation. The woman can also attempts to predict the fertile period by feeling the cervical mucus. Mucus becomes progressively
+                    more slippery and elastic until the peak is reached(day of ovulation). After 3 days of the peak, safe period(dry days) starts and chances of pregnancy becomes very low.
+                </p>
+            </div>
+            <div class="col-md border-primary border rounded-lg p-3" id="withdrawal">
+                <h4 class="text-center text-primary font-weight-bolder">Withdrawal Method (Coitus interrupts)</h4>
+                <p class="mt-3">
+                    <i>
+                        Coitus takes place in a normal manner but the penis is withdrawn immediately before ejaculation.
+                    </i> The unreliability of this method is obvious, but has the advantage that it costs nothing and it requires no device. This is not a very effective practice as pregnancy rate is approximately 25 per 100 woman
+                    years.
+                    <a class="" data-toggle="collapse" data-target="#withdrawalPara" id="withdrawal-read-more">Read more</a>
+                </p>
+                <p class="collapse" id="withdrawalPara">
+                    This practice imposes a great strain upon the husband and can cause considerable anxiety. Wife cannot enjoy intercourse fully with this method, that's why some couple avoid this.
+                    <br><i><b>Advantages: </b> No cost, No contraindications, No side effects, and No effect of lactation(Milk secretion)</i>
+                    <br><i><b>Disadvantages: </b>High failure rate, requires motivation, and No protection against <b>STD </b>and <b>HIV.</b></i>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md border border-warning rounded-lg p-3" id="breastfeeding">
+                <h4 class="text-center text-warning font-weight-bolder">Breastfeeding</h4>
+                <p class="mt-3">
+                    <i>
+                        Regular breastfeeding with at least one feed at night is shown to prevent pregnancy for about 6 months. The failure rate is only about 0.5-1.5%. 
+                    </i> Beyond 6 months of breastfeeding, this method becomes less and less effective and pregnancy can even occur in the absence of menstruation.
+                    <a class="" data-toggle="collapse" data-target="#breastfeedingPara" id="breastfeeding-read-more">Read more</a>
+                </p>
+                <p class="collapse" id="breastfeedingPara">
+                    <i>It is the <b>frequency</b> that matters more than the duration of breastfeeding.</i>
+                    <i>The more the frequency of feed, the more effective contraception it is. </i> Breastfeeding is not prefer in HIV woman and one on certain drugs.
+                </p>
+            </div>
+        </div>
+        <h4 class="font-weight-bolder mt-3 mb-3 text-center" id="barrier-method-divider">
+            <u>
+                Barrier Contraceptives
+            </u>
+        </h4>
+        <div class="row">
+            <div class="col-md border border-success rounded-lg p-3" id="maleCondoms">
+                <h4 class="text-center text-success font-weight-bolder">Use of condoms by Male</h4>
+                <p class="mt-3">
+                    Condoms are made of very thin rubber.
+                    <i> Condoms are used to cover the erectile penis completely. Condom should not be reused, it should be disposed after use. </i> Some women are allergic to latex and in that case non-latex polyurethane condoms are available in the market.
+                    <i>
+                        The condoms are also good to prevent the spread of <b>sexually transmitted diseases(STD)</b> and <b>HIV</b>.
+                    </i>
+                    <a class="" data-toggle="collapse" data-target="#maleCondomPara" id="maleCondom-read-more">Read more</a>
+                </p>
+                <p class="collapse" id="maleCondomPara">
+                    Condoms are less protective against STD transmitted from skin-to-skin contact(e.g. human papilloma virus and herpes virus).
+                    <i><b>Advantages of condoms:</b> Cheap, easily available, can fit in pocket, no side effect, and no expert help needed.</i>
+                    <i><b>Occurrence of cancer of the lower cervix is low amongst women whose partners use condoms.</b>
+                         It is most common method of contraception amongst teen nowadays. It also prevents spreading of other infections.
+                    </i>
+                    <b>Disadvantages: </b><i>Sometimes bursting or slipping of condoms lead to pregnancy(Failure rate is about 10-15 per 100 women years).
+                        Some couples dislikes the method because it slightly interferes with the sexual pleasure.
+                    </i>
+                </p>
+            </div>
+            <div class="col-md border border-primary rounded-lg p-3" id="spermicidalAgent">
+                <h4 class="text-center text-primary font-weight-bolder">Spermicidal Agent</h4>
+                <p class="mt-3">
+                    <i>The spermicidal agents kill the sperms before they enter into the cervical canal.</i> Spermicidal agents are available in the form of foam tablets, soluble pessaries, creams, jellies.
+                    <i>Spermicidal agents also comes as a film with other contraceptive devices such as diaphragm, occlusive cervical cap and condoms.  </i>
+                    <a class="" data-toggle="collapse" data-target="#spermicidalPara" id="spermicidal-read-more">Read more</a>
+                </p>
+                <p class="collapse" id="spermicidalPara">
+                    Failure rate of this method is very high as compared to others- approx 30%.
+                    <i><b>Disadvantages: </b> By causing irritation and abrasions in chronic use, they can cause <b>Vaginal Ulceration</b> and perhaps increase the risk of HIV spread rather than prevent it.</i>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md border border-danger rounded-lg p-3" id="diaphragmUse">
+                <h4 class="text-center text-danger font-weight-bolder">Diaphragms</h4>
+                <p class="mt-3">
+                    <i>
+                        The diaphragms works by occluding the cervical opening. It is very much effective when used with <b>Spermicidal agents.</b>
+                    </i> Diaphragms can be covered liberally with spermicidal cream or jelly.
+                    <a class="" data-toggle="collapse" data-target="#diaphragmPara" id="diaphragm-read-more">Read more</a>
+                </p>
+                <ul class="collapse" id="diaphragmPara">
+                    <li>Diaphragms must be left for about 8h after coitus.</li>
+                    <li>Alterations in the size of diaphragms may be required as a result of changes in weight, illness, delivery and prolapse.</li>
+                    <li>One diaphragm can be used for as long as a year if properly washed and dry.</li>
+                    <li><i><b>Advantages: </b>Diaphragms can prevent transmission of STD from one partner to another.</i></li>
+                    <li>It is completely reversible process.</li>
+                    <li><i><b>Failure rate </b> is very <b>High </b>in this case also.</i></li>
+                </ul>
+                <h4 class="text-center text-danger font-weight-bolder">Cervical Caps</h4>
+                <p class="mt-3">
+                    It is a cup-shaped rubber which fits closely to the cervix.
+                    <i>It is contraindicated if there is any kind of inflammation in cervix or cut/injury in cervix.</i>
+                </p>
+            </div>
+            <div class="col-md border border-warning rounded-lg p-3" id="femaleCondom">
+                <h4 class="text-center text-warning font-weight-bolder">Female Condom</h4>
+                <p class="mt-3">
+                    Also known as Femshield or Femidom. It is loose bag like structure with ring on the closed end and one end is open.
+                    <i>It has the combined features of a diaphragm and a condom.</i> It's closed end is inserted through vagina upto cervix. It covers the entire cervix and vagina. <i>It is highly protective against transmission of<b> STDs</b> and<b> AIDS.</i></b>
+                    from one partner to another. It can be immediately removed after intercourse.
+                    <a class="" data-toggle="collapse" data-target="#femaleCondomPara" id="femaleCondom-read-more">Read more</a>
+                </p>
+                <p class="collapse" id="femaleCondomPara">
+                    <i><b>Advantages of Female condoms are: </b></i><br>
+                    <i>1) It is coital independent.</i><br>
+                    <i>2) Can be wear in advance of the sexual act.</i><br>
+                    <i>3) <b>Very low failure rate</b>.</i><br>
+                    <i>4) Stronger than male condoms and doesn't slips off easily.</i>
+                </p>
+            </div>
+        </div>
+        <div class="row shadow mb-5">
+            <div class="col-md border border-secondary rounded-lg p-3" id="progesteronePills">
+                <h4 class="text-center text-secondary font-weight-bolder">Use of Progesterone Pills</h4>
+                <p class="mt-3">
+                    <i><b>Must be taken only after prescribed by Doctor.
+                    </b></i> These are low-dose progesterone pill, called 'millipill'. It should be administered daily.
+                    <i>Progesterone in the pills makes the cervical mucus more viscid which prevents the penetration of sperms into the cervical canal.</i> They also inhibits the ovulation by about 40%.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5" id="iud">
+            <div class="col-md border border-warning rounded-lg">
+                <h4 class="text-center text-warning font-weight-bolder mt-4 mb-4">
+                    Intrauterine Contraceptive Devices(IUD)/IUCD
+                </h4>
+                <p class="mt-3 p-2">
+                    It is a kind of device which is inserted into uterus by trained medical professional.
+                    <i>It is an effective, reversible and long term method of contraception. Life span of this IUDs are about 3-5 years.</i> It is one of the best contraceptive if you want a gap between subsequent child without using contraception regularly.(just
+                    insert and forget).
+                    <a class="" data-toggle="collapse" data-target="#iudPara" id="iud-read-more">Read more</a>
+                </p>
+                <p class="collapse p-2" id="iudPara">
+                    After insertion of IUD into uterus by medical professional, a nylon thread attaches to the lower end of IUD protrudes through the cervical canal into the vagina. The thread can be felt by patient herself.
+                    <br><i>Keep a regular watch on the thread by feeling it in vaginal canal by inserting your finger into vaginal canal. If it is absent, consult to doctor about this.</i>
+                </p>
+                <div class="row collapse" id="iudPara">
+                    <div class="col-md border border-warning rounded-lg p-3">
+                        <h4 class="text-center text-danger">Cooper-carrying IUD</h4>
+                        <p class="p-2">
+                            Cooper carrying IUDs are the most effective IUDs. Cooper IUD release constant and small amount of Cooper in uterus which decreases the motility of the sperms and provides addition contraceptive effect. They are a bit expensive than other IUDs but have
+                            much
+                            <b> better contraceptive values </b>than other IUDs.
+                            <i>It has<b> less side effects</b> than other IUDs.</i>
+                        </p>
+                    </div>
+                    <div class="col-md border border-warning rounded-lg p-3">
+                        <h4 class="text-center text-success">Hormonal IUDs(Progestasert and levonova)</h4>
+                        <p class="p-2">
+                            These are hormonal carrying IUDs. They also regulates the entry of sperm by forming a thick plug of mucus at the cervical os which provides additional contraceptive effect.
+                            <i>Chances of <b>ectopic pregnancies</b> are 6-9 times more in hormonal IUDs than in Cooper carrying IUD.</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row collapse" id="iudPara">
+                    <div class="col-md p-2">
+                        <p class="mt-3 p-3">
+                            <i><b>IUD should not be used if:</b></i>
+                            <br>1)<i> If there is suspected pregnancy.</i>
+                            <br>2)<i> Any Lower genital tract infections.</i>
+                            <br>3)<i> Blood loss or anemia.</i>
+                            <br>4)<i> Heart Disease.</i>
+                            <br>5)<i> Diabetes.</i>
+                            <br>6)<i> Previous ectopic pregnancy.</i>
+                            <br>6)<i> Presence of fibroids in uterus.</i>
+                        </p>
+                    </div>
+                    <div class="col-md p-2">
+                        <p class="mt-3 p-3">
+                            <i><b>Advantages of IUD:</b></i>
+                            <br>1)<i> It is one time insertion for a long period</i>
+                            <br>2)<i> It doesn't cause any side effect on body</i>
+                            <br>3)<i> It doesn't reduce the fertility after removal</i>
+                            <br>4)<i> It is a completely reversible process</i>
+                        </p>
+                    </div>
+                    <div class="col-md p-2">
+                        <p class="mt-3 p-3">
+                            <i><b>Complications of IUD:</b></i>
+                            <br>1)<i> Needs a well trained Medical Professional.</i>
+                            <br>2)<i> Uterine cramps.</i>
+                            <br>3)<i> It sometimes causes vaginal infections.</i>
+                            <br>4)<i> Ectopic Pregnancy.</i>
+                            <br>5)<i> Painful Periods.</i>
+                            <br>5)<i> May cause Heavy bleeding during periods.</i>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row" id="hormonalPills">
+            <div class="col-md rounded-lg" id="hormonal-pill-div">
+                <h4 class="text-center font-weight-bolder mt-4 mb-4" id="hormonal-pill-heading">
+                    Suppression of Ovulation with Hormones
+                </h4>
+                <p class="mt-3 p-2">
+                    Hormonal contraceptives are considered to be the most effective contraceptive among all the contraceptives. A wide variety of hormonal preparations are available in market and their mechanism of action and side effects depends on the hormone used.
+                    <a class="" data-toggle="collapse" data-target="#pillsPara" id="pillsPara-read-more">Read more</a>
+                    <br><i>
+                        <b>Note: </b>
+                        Mala-D and Mala-N are available free of cost in India. The tablets are taken starting on the first day of the cycle for 21 days(<a class="" data-toggle="collapse" data-target="#forgotPara" id="forgotPara-read-more">What if you forgot to take pill</a>) for a 28 days cycle. A new course of tablets should be commenced 7 days after cessation of the previous course. 
+                        <a class="" data-target="#malaPara" data-toggle="collapse" id="malaPara-read-more">Read more</a>
+                        
+                    </i>
+                </p>
+                <p class="collapse" id="malaPara">
+                    During the first cycle of use of these pills, ovulation may not be suppressed and the patient is advised to use an additional precaution in the first cycle.
+                </p>
+                <p class="collapse" id="forgotPara">
+                    <i>
+                        If you forgot to take a tablet, you should take two tablet on the next day. But if you forgot to take the pill more than once in a cycle, you are no longer adequately protected and must use a barrier method while intercourse during that cycle.
+                    </i>
+                </p>
+                <div class="row collapse mt-3 mb-3" id="pillsPara">
+                    <div class="col-md p-2">
+                        <p class="p-2">
+                            <i><b>Advantages: </b></i>
+                            <br>1) <i>Cheap</i>
+                            <br>2) <i>Easily Available</i>
+                            <br>3) <i>Very low failure rate</i>
+                            <br>4) <i>Reduce blood loss during periods</i>
+                            <br>5) <i>Protect against rheumatoid arthritis problem.</i>
+                            <br>6) <i>Reduces chances of Inflammatory diseases.</i>
+                        </p>
+                    </div>
+                    <div class="col-md p-2">
+                        <p class="p-2">
+                            <i><b>Side effects: </b></i>
+                            <br>1) <i>Sometimes bleeding absent during periods.</i>
+                            <br>2) <i>It's long term use can increase chances of cervical cancer.</i>
+                            <br>3) <i>It's long term use(>4 yrs) can increase chances of breast cancer.</i>
+                            <br>4) <i>It suppresses lactation(milk secretion). Should not be used by lactating mother.</i>
+                            <br>5) <i>Liver adenomas are also reported along with other liver diseases.</i>
+                            <br>6) <i>Headache, migraine, depression, irritability, increased weight and lethargy can also be seen.</i>
+                            <br>7) <i>It doesn't prevent against transmission of HIV and STD.</i>
+                        </p>
+                    </div>
+                    <div class="col-md p-2">
+                        <p class="p-2">
+                            <i><b>Pills should not be taken in case of: </b></i>
+                            <br>1) <i>Heart diseases, High BP, smoker over 35 years.</i>
+                            <br>2) <i>Diabetes</i>
+                            <br>3) <i>History of Heart Attack, severe migraine, sickle cell anemia.</i>
+                            <br>4) <i>Chronic liver disease</i>
+                            <br>5) <i>Breast cancer</i>
+                            <br>6) <i>Obesity</i>
+                            <br>7) <i>Lactating Woman</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="emergencyPill">
+            <div class="col-md rounded-lg" id="emergency-pill-div">
+                <h4 class="text-center font-weight-bolder mt-4 mb-4" id="emergency-pill-heading">
+                    Emergency Contraceptives
+                </h4>
+                <p class="mt-3 p-2">They are also known as Postcoital Contraceptive.
+                    <i> They interferes with the events occur after coitus and therefore interferes with pregnancy and give contraceptive effects. </i> This method is used to prevent pregnancy after<b> unprotected</b> sexual intercourse, <b>Rape</b>,
+                    and <b>accidental rupture</b> of a condom during coitus taking place around ovulation.
+                    <a class="" data-toggle="collapse" data-target="#emergencyPara" id="emergencyPara-read-more">Read more</a>
+                </p>
+                <p class="collapse p-2" id="emergencyPara">
+                    <i>These emergency contraceptives should be used mainly as 'back-up' methods in these conditions. <b>Emergency contraceptives should not be used as a regular contraceptives technique as an ongoing method after every act of sexual intercourse.</b></i>
+                    <br><i><b>Cooper T IUCD </b>can also be used as an emergency contraceptive if used within 5 days of sexual intercourse.</i>
+                </p>
+            </div>
+        </div>
+        <div class="row" id="sterilization">
+            <div class="col-md border border-primary rounded-lg">
+                <h4 class="text-center text-primary font-weight-bolder mt-4 mb-4">
+                    Sterilization Method(Permanent Contraceptive Method)
+                </h4>
+                <p class="mt-3 p-2">
+                    It is a surgical procedure which prevents further pregnancy permanently.
+                    <i> It is best suited for those couples who have completed their families and do no want to use any other contraceptive regularly.</i> It is the most effective method among all the contraceptives but its reversibility is very low.
+                    <a class="" data-target="#sterilizationPara" data-toggle="collapse" id="sterilizationPara-read-more">Read more</a>
+                </p>
+                <div class="collapse row mt-3" id="sterilizationPara">
+                    <div class="col-md p-2 border">
+                        <h4 class="text-center font-weight-bolder mt-2" id="male-sterilization-heading">
+                            Male Sterilization-Vasectomy
+                        </h4>
+                        <p class="p-2">
+                            In this method, a small incision is made over skin of scrotum(Pouch in which testes are present) and the vas deferens(The tube from which sperms comes out) is divided and tied to stop the passage of sperm from testis to penis.
+                            <i><b>It doesn't affect the testosterone hormone secretion and is totally safe process.</b></i>
+                            <a class="" data-toggle="collapse" data-target="#male-sterilizationPara" id="male-sterilizationPara-read-more">Read more</a>
+                        </p>
+                        <p class="collapse" id="male-sterilizationPara">
+                            It is advised to use protection(condoms) for about 3 months or about 20 intercourse as sperms are still stored in the reproductive tract.
+                            <i>Two semen report must confirm absence of sperm after vasectomy and after that no need to wear any condom.</i>
+                            <br><i><b>Advantages: </b> It is a minor surgical procedure, no contraceptives needed for lifetime</i>
+                            <br><i><b>Disadvantages: </b>Poor reversibility, pain on the skin of scrotum, bleeding, doesn't prevent against HIV and STD transmission, infection can also occur.</i>
+                        </p>
+                    </div>
+                    <div class="col-md p-2 border">
+                        <h4 class="text-center text-danger font-weight-bolder mt-2" id="female-sterilization-heading">
+                            Female Sterilization-Tubectomy
+                        </h4>
+                        <p class="p-2">
+                            In this process, a small incision is made and fallopian tube(tube in which ovum transfer from ovary to uterus) are cut and ligated to avoid ovum transfer to uterus.
+                            <i>It should be done in Multiparity(Multiply deliveries), Medical diseases at high risk of pregnancy, breast cancer, psychiatric problem.</i>
+                            <a class="" data-toggle="collapse" data-target="#female-sterilizationPara" id="female-sterilizationPara-read-more">Read more</a>
+                        </p>
+                        <p class="collapse" id="female-sterilizationPara">
+                            <i>This can be done at any convenient time to the patient. It can also be done along with caesarean section delivery or any time after 6 weeks of delivery.</i><br>
+                            <br><i><b>Complications: </b></i>
+                            <br>1) <i>Problem with anaesthesia</i>
+                            <br>2) <i>Sometimes it is risky for life(4 in 1 lakh cases)</i>
+                            <br>3) <i>Failure may occur but chances are very less.</i>
+                            <br>4) <i>Trauma to bladder, bowel may occur during the procedure.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="jumbotron border rounded-0 text-center border-danger mb-0 mt-5">
+        <h6 class="font-weight-bolder" id="footer-quote">The purpose of AwareSHE is to bring awareness in Women about their health
+        </h6>
+    </div>
+</body>
+
+</html>

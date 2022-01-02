@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="assets/img/favicon-32x32.png" type="image/png" style="border-radius: 50%" />
+    <title>AwareSHE</title>
+
+</head>
+
+<body>
+    <nav class="navbar shadow justify-content-start">
+        <a href="home.html" class="navbar-brand navbar-expand-md text-danger font-weight-bolder font-italic">AwareSHE</a>
+
+    </nav>
+    <div class="jumbotron text-center mb-0 ">
+        <h1 class="text-danger font-weight-bolder font-italic">AwareSHE</h1>
+        <p class="text-dark font-weight-bolder">Everything you need to know about Contraception</p>
+    </div>
+
+    <div class="container-lg msCycleContainer text-center rounded-lg mt-4 mb-3 p-4" id="info-collection-div">
+        <p class="font-weight-bolder mb-0 text-center text-danger">Enter data below to get information regarding Menstrual Cycle</p>
+        <p class="font-weight-bold text-center text-primary mb-5">(We won't store any of your data)</p>
+        <form class="was-validated" action="#" id="ms-cycle-form">
+            <div class="form-group">
+                <label for="start-menstruation" class="font-weight-bolder">
+                    When was your last period begin?
+                </label>
+                <input type="date" id="start-menstruation" class="form-control border border-dark" required />
+                <div class="invalid-feedback">
+                    Please fill out this field properly
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="menstruation-length" class="font-weight-bolder">
+                    How long does your period last(in Days)?
+                </label>
+                <input type="number" id="menstruation-length" class="form-control border border-dark" required />
+                <div class="invalid-feedback">
+                    Please fill out this field properly
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cycle-length" class="font-weight-bolder">
+                    What is the interval between two periods(cycle)?
+                </label>
+                <input id="cycle-length" class="form-control border border-dark" type="number" required/>
+                <div class="invalid-feedback">
+                    Please fill out this field properly
+                </div>
+            </div>
+
+        </form>
+        <button class="btn btn-success font-weight-bolder" type="button" id="info-submit-btn" onclick="submitFunction()">
+            Submit
+        </button>
+    </div>
+    <div class="container-lg p-4 border-dark text-center" id="page-link-div">
+        <h3 class="text-center font-weight-bolder">Click to Read more &#8681;</h3>
+        <button class="btn-lg btn-danger text-white mx-auto" onclick="contraceptionPage()">How to prevent Pregnancy</button>
+    </div>
+    </div>
+    <div class="alert shadow mt-5 mb-5 mx-5 rounded-lg border border-dark fade show alert-danger text-center d-none hide" id="alert-div">
+        <!-- <button type="button" class="close" data-dismiss="alert">
+                &times;
+            </button> -->
+        <h4> &#x26A0;<small class="font-weight-bolder text-wrap text-center"> It is always advised to wear protection around fertile period. </small></h4>
+    </div>
+    <div class="container-lg d-none hide" id="events-cards-container">
+        <div class="card-deck mx-3 mb-4 mt-3">
+            <div class="card shadow-lg rounded-lg border border-danger">
+                <div class="card-header shadow">
+                    <h3 class="text-center font-weight-bolder card-title text-danger mt-1 text-wrap"><u>Menses</u> / <u>Periods</u>
+                    </h3>
+                    <p class="text-muted text-center font-weight-bold text-wrap">
+                        from
+                        <span id="menses-start">
+                        01/05/2021
+                    </span> to
+                        <span id="menses-end">
+                        04/05/2021
+                    </span>
+                    </p>
+                </div>
+                <div class="card-body shadow bg-danger">
+                    <p class="card-text text-center text-white font-weight-bold text-wrap">
+                        The period of vaginal discharge. The innermost layer of uterus(Endometrium) is shed along with blood as vaginal discharge.Sexual Intercourse should be avoided in this phase due to pain in lower abdomen. There are mood changes and depression during this
+                        period. Pain in abdomen, cramps etc. can also be felt. Proper sleep is recommended during this period.
+                    </p>
+                </div>
+            </div>
+            <div class="card shadow-lg rounded-lg border border-success">
+                <div class="card-header shadow">
+                    <h3 class="text-center font-weight-bolder card-title mt-1 text-success text-wrap">
+                        <u>Pre-Ovulatory Safe Period </u>
+                    </h3>
+                    <p class="text-muted text-center font-weight-bold mt-1 text-wrap">
+                        from
+                        <span id="pre-ovulatory-start">
+                        05/05/2021
+                    </span> to
+                        <span id="pre-ovulatory-end">
+                        07/05/2021
+                    </span>
+                    </p>
+                </div>
+                <div class="card-body shadow bg-success">
+                    <p class="card-text text-center text-white font-weight-bold text-wrap">
+                        Time period before ovulation. It is the time period when ovulation doesn't occur and cervical mucosa is dry (i.e. without fluid). If during this period, you notice any kind of cervical mucus (You can check by inserting two finger from vagina till cervix
+                        and can feel the mucus), Try to avoid having intercourse until the post-ovulatory safe period.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-deck mx-3 mt-3 mb-5">
+            <div class="card shadow-lg rounded-lg border border-warning">
+                <div class="card-header shadow">
+                    <h3 class="text-center font-weight-bolder card-title text-warning mt-1 text-wrap">
+                        <u>Fertile Period</u>
+                    </h3>
+                    <p class="text-muted text-center font-weight-bold text-wrap">
+                        from
+                        <span id="fertile-period-start">
+                        08/05/2021
+                    </span> to
+                        <span id="fertile-period-end">
+                        20/05/2021
+                    </span>
+                    </p>
+                </div>
+                <div class="card-body bg-warning shadow">
+                    <p class="card-text text-center text-black font-weight-bolder text-wrap">
+                        Fertile period can also be termed as 'Unsafe Period' as chances of conception are very high during this time. Sexual Intercourse should be avoided during this period to avoid pregnancy and should be performed during this period for getting pregnant. This
+                        period Extends from 5 days before ovulation (As sperms can be functional upto 5 days inside female body) and about 2 to 3 days after ovulation. But as there is an average variation of 2 days in the day of ovulation, So this period
+                        extends from 7 days before the expected date of ovulation to about 5 days after the expected date of ovulation(but if you feel that ovulation happened then this period will only extends until 3 days after ovulation).
+                    </p>
+                </div>
+            </div>
+            <div class="card shadow-lg rounded-lg border border-primary">
+                <div class="card-header shadow">
+                    <h3 class="text-center font-weight-bolder card-title mt-1 text-primary text-wrap">
+                        <u>Post-Ovulatory Safe Period </u>
+                    </h3>
+                    <p class="text-muted text-center font-weight-bold mt-1 text-wrap">
+                        from
+                        <span id="post-ovulatory-start">
+                        21/05/2021
+                    </span> to
+                        <span id="post-ovulatory-end">
+                        28/05/2021
+                    </span>
+                    </p>
+                </div>
+                <div class="card-body bg-primary shadow">
+                    <p class="card-text text-center text-white font-weight-bold text-wrap">
+                        This period starts from about 3 days after ovulation or 3 days after the mucus in the cervix reaches its peak(You can check it by inserting two fingers through vagina until cervix and check if mucus is there or not)<a href="#mucusCheck"
+                            class="text-warning">Click here to know more about cervical mucus</a> This is the safest period in the entire cycle as the chances of pregnancy are almost zero during this period. This period exists till the beginning of next menstrual
+                        bleeding. Misinterpretation of the beginning of this period can lead to pregnancy. So, it is always advised wear protection in the early days of this period. to
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg p-4 border-dark text-center" id="page-link-div">
+            <h3 class="text-center font-weight-bolder text-uppercase">Click to read more &#8681;</h3>
+            <button class="btn-lg btn-danger text-white mx-auto" onclick="contraceptionPage()">How to prevent Pregnancy</button>
+        </div>
+    </div>
+    <div class="jumbotron border rounded-0 text-center border-danger mb-0 mt-3">
+        <h6 class="font-weight-bolder" id="footer-quote">The purpose of AwareSHE is to bring awareness in Women about their health
+        </h6>
+    </div>
+</body>
+
+</html>

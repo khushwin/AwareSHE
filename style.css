@@ -1,0 +1,39 @@
+.navbar {
+    background-color: pink;
+}
+
+.h4-heading-ms-cycle {
+    text-decoration: underline;
+}
+
+#footer-quote {
+    color: rgb(235, 119, 138);
+}
+
+#natural-method-divider {
+    color: rgb(221, 36, 67);
+}
+
+#barrier-method-divider {
+    color: rgb(67, 190, 42);
+}
+
+#hormonal-pill-heading {
+    color: orangered;
+}
+
+#hormonal-pill-div {
+    border: 1px solid orangered;
+}
+
+#emergency-pill-div {
+    border: 1px solid rgb(49, 211, 0);
+}
+
+#emergency-pill-heading {
+    color: rgb(55, 211, 0);
+}
+
+#male-sterilization-heading {
+    color: rgb(153, 28, 153);
+}
